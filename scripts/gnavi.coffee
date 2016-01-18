@@ -14,7 +14,7 @@ address_    = '馬出'
 hitPerPage  = 1
 
 module.exports = (robot) ->
-  robot.hear /mesi ?(.*)$/i, (msg) ->
+  robot.hear /gnavi ?(.*)$/i, (msg) ->
     attr = msg.match[1].trim()
     if attr != ""
       address = attr
