@@ -29,7 +29,7 @@ module.exports = (robot) ->
   robot.hear /(古森|こもり)/i, (msg) ->
     msg.send "公聴会お疲れ様でした！"
 
-  robot.hear /(shishamo|ししゃも|シシャモ)/i, (msg) ->
+  robot.hear /(からふとししゃも|樺太ししゃも|カラフトシシャモ)/i, (msg) ->
     timestamp = (new Date()).toISOString().replace(/[^0-9]/g, "")
     msg.send "http://www.umai-iroha.jp/datafile/brand_dish_image_1505.jpg?" + timestamp
 
@@ -37,7 +37,7 @@ module.exports = (robot) ->
     msg.send "うー"
 
   robot.hear /あさむら/i, (msg) ->
-    msg.send "うんこうんこししゃもうんこうんこ"
+    msg.send "ししゃも！"
 
   robot.hear /(くりや|厨)/i, (msg) ->
     msg.send "んー？なにー？"
