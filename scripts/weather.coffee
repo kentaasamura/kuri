@@ -23,5 +23,5 @@ module.exports = (robot) ->
         forecastTime = new Date(result.publicTime)
         msg.send "えーっと、" +
         "#{dateFormat(forecastTime, "yyyy年mm月dd日HH時MM分")}の情報によると、\n" +
-        "今日の福岡市の天気は#{result.forecasts[0].telop}みたい!\n" +
+        "今日の天気は#{result.forecasts[0].telop}みたい!\n" +
         "下記に詳細を書いておくね!\n\n #{result.description.text}\n"
