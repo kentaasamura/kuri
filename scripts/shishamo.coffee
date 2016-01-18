@@ -14,7 +14,6 @@ module.exports = (robot) ->
     msg.send "SHISHAMO 3 発売まで、あと"+ days_since + "日(" + hour_since + "時間)しかないよ！アマゾンへ急げ！"
 
 
-module.exports = (robot) ->
   robot.hear /(ライブ|live|)/i, (msg) ->
     date1 = new Date()
     date2 = new Date("2016/05/15 00:00")

@@ -16,6 +16,5 @@ module.exports = (robot) ->
                          "http://www.niusnews.com/upload/imgs/default/13OctE/LEGALHIGH/23.jpg?" + timestamp,
                          "https://s3-ap-northeast-1.amazonaws.com/s3.locari.jp/web/images/p/post_element/picture/677/mobile_picture.jpg?" + timestamp,
                          "http://image.space.rakuten.co.jp/d/strg/ctrl/2/ef4cb41d4e18638c1e3fe4caddf8c862406dfb52.68.2.2.2.jpg?thum=53?" + timestamp,
-                         "http://p.twpl.jp/show/large/eq5bC?" + timestamp,
+                         "http://p.twpl.jp/show/large/eq5bC?" + timestamp
      ]
-    ]
