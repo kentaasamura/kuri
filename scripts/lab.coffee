@@ -37,7 +37,10 @@ module.exports = (robot) ->
     msg.send "うー"
 
   robot.hear /あさむら/i, (msg) ->
-    msg.send "ししゃも"
+    msg.send "うんこうんこししゃもうんこうんこ"
 
   robot.hear /(くりや|厨)/i, (msg) ->
     msg.send "んー？なにー？"
+
+  robot.hear /(川久保|かわくぼ)/i, (msg) ->
+    msg.send "研究しろ！"
