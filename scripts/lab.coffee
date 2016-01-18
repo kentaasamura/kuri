@@ -25,7 +25,7 @@ module.exports = (robot) ->
     msg.send "修士論文発表会まで、あと"+ days_since + "日だよ！"
     msg.send "ちなみに時間で表すと、あと"+ hour_since + "時間しかないよ！ピンチだよ！"
 
-  robot.hear /ですか)/i, (msg) ->
+  robot.hear /ですか/i, (msg) ->
     msg.send "そうだね〜"
 
   robot.hear /(古森|こもり)/i, (msg) ->
