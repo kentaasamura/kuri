@@ -32,3 +32,6 @@ module.exports = (robot) ->
   robot.hear /(shishamo|ししゃも|シシャモ)/i, (msg) ->
     timestamp = (new Date()).toISOString().replace(/[^0-9]/g, "")
     msg.send "http://www.umai-iroha.jp/datafile/brand_dish_image_1505.jpg?" + timestamp
+
+  robot.hear /あー/i, (msg) ->
+    msg.send "うー"
