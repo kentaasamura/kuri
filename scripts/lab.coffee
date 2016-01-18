@@ -24,3 +24,13 @@ module.exports = (robot) ->
     hour_since = Math.floor((date2 - date1) / (1000*60*60))
     msg.send "修士論文発表会まで、あと"+ days_since + "日だよ！"
     msg.send "ちなみに時間で表すと、あと"+ hour_since + "時間しかないよ！ピンチだよ！"
+
+  robot.hear /ですか)/i, (msg) ->
+    msg.send "そうだね〜"
+
+  robot.hear /(古森|こもり)/i, (msg) ->
+    msg.send "公聴会お疲れ様でした！"
+
+  robot.hear /(shishamo|ししゃも|シシャモ)/i, (msg) ->
+    timestamp = (new Date()).toISOString().replace(/[^0-9]/g, "")
+    msg.send "http://www.umai-iroha.jp/datafile/brand_dish_image_1505.jpg?" + timestamp
