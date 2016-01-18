@@ -5,7 +5,9 @@
   "author": "Motomura Yohei",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
+    "arrify": "^1.0.1",
     "cron": "^1.1.0",
+    "dateformat": "^1.0.12",
     "htmlparser": "^1.7.7",
     "hubot": "^2.17.0",
     "hubot-diagnostics": "0.0.1",
