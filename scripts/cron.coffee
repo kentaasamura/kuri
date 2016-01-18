@@ -19,10 +19,9 @@ module.exports = (robot) ->
     robot.send {room: "#kuriya-bot"}, "掃除の時間だよ！"
   , null, true, "Asia/Tokyo"
 
-  new cron '0 48 20 * * 1-5', () =>
-    robot.http {room: "#kuriya-bot"}, "http://mstr.aozora0000.biz/"
-  , null, true, "Asia/Tokyo"
+  new cron '0 52 20 * * 1-5', () =>
+    robot.http
       .get() (err, res, body) ->
-          msg.send JSON.parse(body).image
-          if JSON.parse(body).tags
-            msg.send JSON.parse(body).tags
+        robot.send {room: "#kuriya-bot"},JSON.parse(body).image, null, true, "Asia/Tokyo"
+        if JSON.parse(body).tags
+          robot.send {room: "#kuriya-bot"},JSON.parse(body).tags, null, true, "Asia/Tokyo"
