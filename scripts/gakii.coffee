@@ -5,7 +5,7 @@
 #
 
 module.exports = (robot) ->
-  robot.hear /(gakki-|がっきー|新垣|結衣|掟上|今日子)/i, (msg) ->
+  robot.hear /(gakki-|がっきー|ガッキー|新垣|結衣|掟上|今日子)/i, (msg) ->
     timestamp = (new Date()).toISOString().replace(/[^0-9]/g, "")
     msg.send msg.random ["http://blogs.c.yimg.jp/res/blog-e0-c3/k_smsk_sq_soccer/folder/493625/01/3529001/img_23?1272841739?" + timestamp,
                          "http://blogs.c.yimg.jp/res/blog-e0-c3/k_smsk_sq_soccer/folder/493625/01/3529001/img_23?1272841739?" + timestamp,
