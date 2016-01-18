@@ -9,8 +9,7 @@ arrify = require('arrify')
 dateFormat = require('dateformat')
 
 module.exports = (robot) ->
-#    robot.respond /天気/i, (msg) ->
-    robot.hear /天気/i, (msg) ->
+  robot.hear /天気/i, (msg) ->
     cityId = "400010"
     msg
       .http('http://weather.livedoor.com/forecast/webservice/json/v1')
